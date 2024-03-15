@@ -1,15 +1,23 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 function Download() {
   return (
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
-	<div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+	<motion.div 
+	initial={{ opacity: 0, x: -100 }}
+	whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4 } }}
+	
+	class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
 	  <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Download Wise app</h2>
 	  <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-900">Send money smarter</h1>
-	</div>
-	<div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
+	</motion.div>
+	<motion.div 
+	initial={{ opacity: 0, x: -100 }}
+	whileInView={{ opacity: 1, x: 0, transition: { delay: 0.8 } }}
+	class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
 
 
 <a href="https://play.google.com/store/apps" target="_blank">
@@ -39,7 +47,7 @@ function Download() {
 		</span>
 	  </button>
       </a>
-	</div>
+	</motion.div>
   </div>
 </section>
 
