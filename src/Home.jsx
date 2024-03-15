@@ -90,7 +90,7 @@ function Home() {
         </div>
       </section>
 
-      <section class="flex justify-center">
+      <section class="flex justify-center animated-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="62.63443"
