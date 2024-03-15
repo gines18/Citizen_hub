@@ -12,3 +12,11 @@
   .animated-arrow {
     animation: moveUpDown 1.5s ease-in-out infinite;
   }
+
+  .menu-open {
+    display: block;
+  }
+  
+  .menu-closed {
+    display: none;
+  }

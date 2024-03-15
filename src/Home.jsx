@@ -110,7 +110,7 @@ function Home() {
         </svg>
       </section>
 
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font bg-gradient-to-tr from-sky-800 via-sky-400 to-sky-200 mt-20">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div class="p-2 sm:w-1/2 w-full">
