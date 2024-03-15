@@ -1,13 +1,21 @@
-
+import Send_money from "./Offer.jsx";
+import Product from "./Info.jsx";
+import Download from "./Action.jsx";
+import Footer from "./Footer.jsx";
+import Home from "./Home.jsx";
+import Navbar from "./Navbar.jsx";
 
 function App() {
-
-
   return (
     <>
-     <h1 className="text-red-900">Hello world</h1>
+      <Navbar />
+      <Send_money />
+      <Home />
+      <Product />
+      <Download />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
