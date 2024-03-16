@@ -1,16 +1,19 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
       <nav class="bg-gradient-to-tr from-white via-transparent to-blue-100 shadow dark:bg-gray-800">
         <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-          <a
-            href="#"
+          <Link
+          className={({ isActive }) =>{ 
+            return isActive? "text-blue-700" : ""}}
+            to="/"
             class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+         
           >
             home
-          </a>
+          </Link>
 
           <a
             href="#"
@@ -19,19 +22,19 @@ function Navbar() {
             features
           </a>
 
-          <a
-            href="#"
+          <Link
+            to="/contact"
             class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
           >
-            pricing
-          </a>
+            contact
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/blog"
             class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
           >
             blog
-          </a>
+          </Link>
 
           <a
             href="#"
