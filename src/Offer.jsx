@@ -22,7 +22,7 @@ function Send_money() {
                 alt=""
                 height="100%"
                 width="50%"
-                class="rounded pb-4"
+                class="rounded-lg pb-4"
               />
 
               <div class="flex-grow">
@@ -41,7 +41,7 @@ function Send_money() {
                 alt=""
                 height="100%"
                 width="50%"
-                class="rounded pb-4"
+                class="rounded-lg pb-4"
               />
 
               <div class="flex-grow">
@@ -60,7 +60,7 @@ function Send_money() {
                 alt=""
                 height="100%"
                 width="50%"
-                class="rounded pb-4"
+                class="rounded-lg pb-4"
               />
               <div class="flex-grow">
                 <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
@@ -80,7 +80,7 @@ function Send_money() {
                   Get a fee-free transfer of up to 500 GBP!
                 </h1>
                 <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
-                  Button
+                  Send
                 </button>
               </div>
             </div>
