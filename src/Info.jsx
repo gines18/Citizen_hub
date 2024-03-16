@@ -1,7 +1,7 @@
 function Product() {
   return (
     <>
-      <section class="text-gray-600 body-font">
+      <section id="steps" class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex flex-wrap w-full">
             <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">

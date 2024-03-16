@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav class="bg-white shadow dark:bg-gray-800">
+      <nav class="bg-gradient-to-tr from-white via-transparent to-blue-100 shadow dark:bg-gray-800">
         <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
           <a
             href="#"
@@ -68,8 +68,6 @@ function Navbar() {
           </a>
         </div>
       </nav>
-
- 
     </>
   );
 }

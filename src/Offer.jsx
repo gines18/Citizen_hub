@@ -1,7 +1,7 @@
 function Send_money() {
   return (
     <>
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font" id="service">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
@@ -22,7 +22,8 @@ function Send_money() {
                 alt=""
                 height="100%"
                 width="50%"
-                class="rounded-lg pb-4"
+                class="rounded-lg
+                 pb-4"
               />
 
               <div class="flex-grow">
@@ -79,12 +80,16 @@ function Send_money() {
                 <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">
                   Get a fee-free transfer of up to 500 GBP!
                 </h1>
-                <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
+                <button id="send" class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
                   Send
                 </button>
               </div>
             </div>
           </a>
+        </div>
+        <div class="flex w-full  justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 27.65182 28.4169" creator="Katerina Limpitsouni"><path d="M13.5504,19.26321c2.52209-4.57641,5.04418-9.15282,7.56627-13.72923,.63116-1.14525,.31724-2.779-.89688-3.42047-1.17314-.61982-2.74636-.32632-3.42047,.89688-2.52209,4.57641-5.04418,9.15282-7.56627,13.72923-.63116,1.14525-.31724,2.779,.89688,3.42047,1.17314,.61982,2.74636,.32632,3.42047-.89688h0Z" fill="#6969ce" origin="undraw"/><path d="M4.63518,17.46454c2.52209-4.57641,5.04418-9.15282,7.56627-13.72923,.63116-1.14525,.31724-2.779-.89688-3.42047-1.17314-.61982-2.74636-.32632-3.42047,.89688C5.36201,5.78813,2.83991,10.36454,.31782,14.94095c-.63116,1.14525-.31724,2.779,.89688,3.42047,1.17314,.61982,2.74636,.32632,3.42047-.89688h0Z" fill="#6969ce"/><path d="M19.76772,27.20518c2.52209-4.57641,5.04418-9.15282,7.56627-13.72923,.63116-1.14525,.31724-2.779-.89688-3.42047-1.17314-.61982-2.74636-.32632-3.42047,.89688-2.52209,4.57641-5.04418,9.15282-7.56627,13.72923-.63116,1.14525-.31724,2.779,.89688,3.42047,1.17314,.61982,2.74636,.32632,3.42047-.89688h0Z" fill="#6969ce"/></svg>
+         
         </div>
       </section>
     </>
