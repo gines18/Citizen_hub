@@ -13,10 +13,19 @@
     animation: moveUpDown 1.5s ease-in-out infinite;
   }
 
-  .menu-open {
-    display: block;
+
+
+  .h-custom {
+    height: 600px;
   }
-  
-  .menu-closed {
-    display: none;
+
+
+
+  .h-card{
+    height: 100px;
+    min-width: 200px;
+  }
+
+  .h-height100 {
+    height: 400px;
   }

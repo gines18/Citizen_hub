@@ -5,6 +5,7 @@ import Footer from "./Footer.jsx";
 import Home from "./Home.jsx";
 import Navbar from "./Navbar.jsx";
 import About from "./About.jsx";
+import Support from "./Support.jsx";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Send_money />
       <About />
       <Product />
+      <Support />
       <Download />
       <Footer />
     </>
