@@ -1,69 +1,91 @@
-import React from 'react'
-import Navbar from './Navbar'
-import {Link, Outlet} from 'react-router-dom'
+import React from "react";
+import Navbar from "./Navbar";
+import { Link, Outlet } from "react-router-dom";
+
+
+
+
+
 function Blog() {
+  const blogs = [
+    {
+      id: 1,
+      title: "Why Every Company Needs a Website: Unlocking the Gateway to Digital Success",
+      body: "In today's digital age, having a website isn't just a luxury, it's a necessity for any company striving to thrive in the competitive business landscape. ",
+      category: "Digital presence",
+      Date: "17 March 2024",
+    },
+    {
+      id: 2,
+      title: "The Impact of Social Media on Modern Society",
+      body: "Social media has revolutionized the way we communicate, connect, and share information. From influencing consumer behavior to shaping political discourse, social media plays a significant role in modern society.",
+      category: "Social Media",
+      Date: "17 March 2024",
+    },
+    {
+      id: 3,
+      title: "Why Hiring a Professional Web Designer is Essential for Your Business",
+      body: "Hiring a professional web designer is essential for your business because they possess the expertise and experience needed to create a website that not only looks visually appealing but also functions seamlessly and effectively.",
+      category: "Web Design",
+      Date: "17 March 2024",
+    },
+  ];
+
   return (
- <>
- <Navbar />
-<section class="text-gray-600 body-font overflow-hidden">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="-my-8 divide-y-2 divide-gray-100">
-      <div class="py-8 flex flex-wrap md:flex-nowrap">
-        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-          <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-          <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+    <>
+    <Navbar />
+    <div className="flex flex-col gap-7 xs:flex-col sm:flex-col md:flex-col lg:flex-row">
+    <div>
+    {blogs.map((blog) => (
+      <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-5 w-full ml-auto me-auto ">
+          <div class="-my-8 divide-y-2 divide-gray-100">
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                <span class="font-semibold title-font text-gray-700">
+                  {blog.category}
+                </span>
+                <span class="mt-1 text-gray-500 text-sm">{blog.Date}</span>
+              </div>
+              <div key={blog.id} class="md:flex-grow">
+                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+                  {blog.title}
+                </h2>
+                <p class="leading-relaxed">
+                  {blog.body}
+                </p>
+                <Link
+                  to={`/blog/${blog.id}`}
+                  className="text-indigo-500 inline-flex items-center mt-4"
+                >
+                  Read More
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="md:flex-grow">
-          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-          <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-          <a href="#blog1" className="text-indigo-500 inline-flex items-center mt-4">
-            Learn More
-      
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="py-8 flex flex-wrap md:flex-nowrap">
-        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-          <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-          <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-        </div>
-        <div class="md:flex-grow">
-          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-          <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-          <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="py-8 flex flex-wrap md:flex-nowrap">
-        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-          <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-          <span class="text-sm text-gray-500">12 Jun 2019</span>
-        </div>
-        <div class="md:flex-grow">
-          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-          <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-          <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
+      </section>
+    ))}
+</div>
+
+    <div><Outlet /></div>
     </div>
-  </div>
-  <Outlet />
-</section>
-</>
-  )
+   
+  </>
+
+  );
 }
 
-export default Blog
+export default Blog;

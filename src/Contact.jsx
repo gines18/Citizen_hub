@@ -1,4 +1,4 @@
-// Contact.js
+
 
 import Navbar from './Navbar';
 import React from 'react';
@@ -7,8 +7,8 @@ import Footer from './Footer';
 const Contact = () => {
     return (
 <>
-        <section className="text-gray-600 body-font relative">
         <Navbar />
+        <section className="text-gray-600 body-font relative flex flex-col justify-center ml-auto mr-auto w-5/6 mt-10">
       
      <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-gray-100 text-gray-900 rounded-lg">
          <div class="flex flex-col justify-center">

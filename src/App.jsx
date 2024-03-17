@@ -17,7 +17,7 @@ function App() {
       <Support />
       <Download />
       <Footer />
-    </>
+          </>
   );
 }
 
