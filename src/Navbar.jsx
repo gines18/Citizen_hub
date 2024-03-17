@@ -15,12 +15,12 @@ function Navbar() {
             home
           </Link>
 
-          <a
-            href="#"
+          <Link 
+            to="/features"
             class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
           >
             features
-          </a>
+          </Link>
           <Link
             to="/blog"
             class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"

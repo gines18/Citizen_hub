@@ -34,7 +34,7 @@ function Blog() {
   return (
     <>
     <Navbar />
-    <div className="flex flex-col gap-7 xs:flex-col sm:flex-col md:flex-col lg:flex-row">
+   
     <div>
     {blogs.map((blog) => (
       <section class="text-gray-600 body-font overflow-hidden">
@@ -81,7 +81,7 @@ function Blog() {
 </div>
 
     <div><Outlet /></div>
-    </div>
+    
    
   </>
 
