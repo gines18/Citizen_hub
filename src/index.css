@@ -3,33 +3,37 @@
 @tailwind utilities;
 
 @keyframes moveUpDown {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
   }
-  
-  /* Apply animation to your SVG */
-  .animated-arrow {
-    animation: moveUpDown 1.5s ease-in-out infinite;
+  50% {
+    transform: translateY(-10px);
   }
-
-
-
-  .h-custom {
-    height: 600px;
+  100% {
+    transform: translateY(0);
   }
+}
 
+/* Apply animation to your SVG */
+.animated-arrow {
+  animation: moveUpDown 1.5s ease-in-out infinite;
+}
 
+.h-custom {
+  height: 600px;
+}
 
-  .h-card{
-    height: 100px;
-    min-width: 200px;
-  }
+.h-card {
+  height: 100px;
+  min-width: 200px;
+}
 
-  .h-height100 {
-    height: 400px;
-  }
+.h-height100 {
+  height: 400px;
+}
 
-  .h-article{
-    height: 400px;
-  }
+.h-article {
+  height: 250px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
+}

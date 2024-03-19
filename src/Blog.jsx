@@ -3,6 +3,15 @@ import Navbar from "./Navbar";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
 function Blog() {
+
+function showArticle() {
+  const articles = document.getElementsByClassName("article");
+  for (let article of articles) {
+    article.classList.add("h-article");
+  }
+}
+
+
   const blogs = [
     {
       id: 1,
@@ -33,10 +42,10 @@ function Blog() {
     <>
       <Navbar />
 
-      <div class="overflow-y-scroll h-article">
+      <div class="article mt-10 mx-10 ">
         {blogs.map((blog) => (
           <section class="text-gray-600 body-font  ">
-            <div class="container px-5 py-5  sm:w-full md:w-4/5 lg:w-4/5 ml-auto me-auto  ">
+            <div class="container px-5 py-5 sm:w-full md:w-4/5 lg:w-4/5 ml-auto me-auto  ">
               <div class="-my-8 divide-y-2 divide-gray-100">
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
                   <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -51,6 +60,7 @@ function Blog() {
                     </h2>
                     <p class="leading-relaxed">{blog.body}</p>
                     <Link
+                    onClick={showArticle}
                       to={`/blog/${blog.id}`}
                       className="text-indigo-500 inline-flex items-center mt-4"
                     >
