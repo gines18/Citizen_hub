@@ -5,7 +5,7 @@ function NotFoundPage() {
 
 return (
     <>
-
+<section class="h-screen">
 <div class="bg-blue-100  text-green-700 p-4 flex flex-col items-center justify-center" role="alert" >
   <p class="font-bold"> 404 Not Found</p>
   <p class="font-bold">Check your URL path!</p>
@@ -16,7 +16,7 @@ return (
   <NavLink to="/">Home page</NavLink>
 </div>
 
-    
+</section>
     </>
 );
 }

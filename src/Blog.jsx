@@ -42,13 +42,13 @@ function showArticle() {
     <>
       <Navbar />
 
-      <div class="article mt-10 mx-10 ">
+      <div class="article mt-10 mx-10 h-screen sm:w-full md:w-4/5 lg:w-5/5 ml-auto me-auto">
         {blogs.map((blog) => (
-          <section class="text-gray-600 body-font  ">
-            <div class="container px-5 py-5 sm:w-full md:w-4/5 lg:w-4/5 ml-auto me-auto  ">
+          <section class="text-gray-600 body-font ">
+            <div class="container px-5 py-5 sm:w-full md:w-4/5 lg:w-5/5 ml-auto me-auto ">
               <div class="-my-8 divide-y-2 divide-gray-100">
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
-                  <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <div class="md:w-40  md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                     <span class="font-semibold title-font text-gray-700">
                       {blog.category}
                     </span>
@@ -89,6 +89,7 @@ function showArticle() {
       <div>
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 }
