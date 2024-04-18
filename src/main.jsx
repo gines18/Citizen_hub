@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Contact from "./Contact.jsx";
+
 import NotFoundPage from "./Error.jsx";
 import Blog from "./Blog.jsx";
 import Article from "./Article.jsx";
 import Features from "./Features.jsx";
+import Contact from "./Contact.jsx";
 
 const router = createBrowserRouter([
   {
