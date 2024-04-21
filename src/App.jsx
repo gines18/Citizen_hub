@@ -6,6 +6,7 @@ import Home from "./Home.jsx";
 import Navbar from "./Navbar.jsx";
 import About from "./About.jsx";
 import Support from "./Support.jsx";
+
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <Support />
       <Download />
       <Footer />
+     
           </>
   );
 }
