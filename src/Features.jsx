@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Countries from "./countries";
+
 function Features() {
   return (
     <>
@@ -16,7 +16,7 @@ function Features() {
           />
         </div>
       </section>
-      <Countries />
+    
 
 </section>
       <Footer />

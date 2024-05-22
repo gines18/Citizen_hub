@@ -12,7 +12,7 @@ function Contact() {
           <p>Thanks for a message!</p>
           <Link to="/">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-             Home page
+              Home page
             </button>
           </Link>
         </div>
@@ -21,7 +21,7 @@ function Contact() {
   }
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-gray-100 text-gray-900 rounded-lg">
         <div class="flex flex-col justify-center">
           <div>
@@ -29,10 +29,10 @@ function Contact() {
               Lets talk about everything!
             </h2>
             <div class="text-gray-700 mt-8">
-              Hate forms? Send us an&nbsp;
+              Hate forms? Send us an{" "}
               <a class="underline" href="mailto:someone@gmail.com">
                 email
-              </a>
+              </a>{" "}
               instead.
             </div>
           </div>
