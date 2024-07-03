@@ -3,14 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import NotFoundPage from "./Error.jsx";
 import Blog from "./Blog.jsx";
 import Article from "./Article.jsx";
 import Features from "./Features.jsx";
 import Contact from "./Contact.jsx";
-import UserAuthentication from "./Auth.jsx";
-import UserProfile from "./UserProfile.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -35,14 +33,6 @@ const router = createBrowserRouter([
         element: <Article />,
       },
     ],
-  },
-  {
-    path: "/Login",
-    element: <UserAuthentication />,
-  },
-  {
-    path: "/UserProfile",
-    element: <UserProfile />,
   },
 ]);
 
